@@ -1,0 +1,58 @@
+<?php get_header(); ?>
+
+<div class="container pt-5 pb-5">
+    <h1 > <?php the_title(); ?></h1>
+    
+    <?php 
+    // $args = array(
+	   // 'numberposts' => -1,
+	   // 'posts_per_page' => -1,
+	   // 'post_type' => 'pdm_organization'
+    // );
+    
+    // //query
+    // $the_query = new WP_Query ( $args );
+    ?>
+    
+    <div class="filter-custom-taxonomy">
+                        <?php
+                        $terms = get_terms( 'org-target-demographic' );
+                        foreach ( $terms as $term ) : ?>
+                        <a href="?getby=cat&cat=<?php echo esc_attr( $term->slug ); ?>">
+                                <?php echo esc_html( $term->name ); ?>
+                        </a>
+                        <?php endforeach; ?>
+    </div>
+    
+    
+    <div class="org-list container">
+        <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <div class="org-container">
+
+                    <div class="org-logo-container">
+                        <span class="helper"></span>
+                        <img class="org-logo" src="<?php the_post_thumbnail_url('medium');?>">
+                    </div>
+                    
+                    <h1 class="org-title"> <?php the_title(); ?> </h1>
+                    <p class="org-descrption">
+                        <?php the_field('brief_descritpion'); ?>
+                    </p>
+                    <a href="<?php the_permalink() ?>" class="btn-readmore">
+                        <div class="btn-readmore-text">
+                            Read More
+                        </div>
+                        <img class="btn-arrow-right" src="<?php echo get_template_directory_uri(). '/media/icons/ic-arrows-right.svg' ?>">
+                    </a>
+                    
+                </div>
+        <?php endwhile; ?>
+
+    </div>
+
+    <?php wp_reset_query(); ?>
+    
+    
+</div>
+
+<?php get_footer(); ?>

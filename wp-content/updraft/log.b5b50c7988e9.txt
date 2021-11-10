@@ -1,0 +1,299 @@
+0000.000 (0) Opened log file at time: Wed, 10 Nov 2021 18:31:05 +0000 on https://myplacedumarche.com/test
+0000.009 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.63 WP: 5.8.2 PHP: 7.3.32 (cgi-fcgi, Linux box2312.bluehost.com 4.19.150-76.ELK.el7.x86_64 #1 SMP Wed Oct 7 01:33:43 CDT 2020 x86_64) MySQL: 5.7.23-23 (max packet size=268435456) WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 48.1M | 50.5M) multisite: N openssl: OpenSSL 1.1.1l  24 Aug 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.073 (0) Free space on disk containing Updraft's temporary directory: 357918.7 MB
+0000.075 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.077 (0) Semaphore (fd, PrJ_options) being initialised
+0000.078 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.080 (0) Set semaphore last lock (fd) time to 2021-11-10 18:31:06
+0000.080 (0) Semaphore lock (fd) complete
+0000.082 (0) Backup run: resumption=0, nonce=b5b50c7988e9, file_nonce=b5b50c7988e9 begun at=1636569065 (1s ago), job type=backup
+0000.083 (0) Scheduling a resumption (1) after 300 seconds (1636569366) in case this run gets aborted
+0000.094 (0) Checking if we have a zip executable available
+0000.095 (0) Testing: /usr/bin/zip
+0000.103 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.104 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.105 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.106 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.106 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.117 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.118 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.125 (0) Working binary zip found: /usr/bin/zip
+0000.126 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.127 (0) Creation of backups of directories: beginning
+0000.129 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.330 (0) Total entities for the zip file: 995 directories, 4932 files (0 skipped as non-modified), 76.2 MB
+0000.333 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.336 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.338 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.341 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.343 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.345 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.347 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.350 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.352 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.355 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.356 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (8 MB, 4932 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0001.046 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: size is now: 4.00 MB
+0001.051 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1100 files added (on-disk size: 4134.4 KB)
+0001.054 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1200 files added (on-disk size: 4134.4 KB)
+0001.057 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1300 files added (on-disk size: 4134.4 KB)
+0001.061 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1400 files added (on-disk size: 4134.4 KB)
+0001.064 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1500 files added (on-disk size: 4134.4 KB)
+0001.067 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1600 files added (on-disk size: 4134.4 KB)
+0001.070 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1700 files added (on-disk size: 4134.4 KB)
+0001.072 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1800 files added (on-disk size: 4134.4 KB)
+0001.076 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 1900 files added (on-disk size: 4134.4 KB)
+0001.081 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2000 files added (on-disk size: 4134.4 KB)
+0001.082 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (18.6 MB, 4932 files batched, 1001 (2002) added so far); re-opening (prior size: 4134.4 KB)
+0002.227 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: size is now: 9.90 MB
+0002.232 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2100 files added (on-disk size: 10130.4 KB)
+0002.236 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2200 files added (on-disk size: 10130.4 KB)
+0002.239 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2300 files added (on-disk size: 10130.4 KB)
+0002.241 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2400 files added (on-disk size: 10130.4 KB)
+0002.245 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2500 files added (on-disk size: 10130.4 KB)
+0002.250 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2600 files added (on-disk size: 10130.4 KB)
+0002.254 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2700 files added (on-disk size: 10130.4 KB)
+0002.259 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2800 files added (on-disk size: 10130.4 KB)
+0002.264 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 2900 files added (on-disk size: 10130.4 KB)
+0002.268 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3000 files added (on-disk size: 10130.4 KB)
+0002.269 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (22.9 MB, 4932 files batched, 1001 (3003) added so far); re-opening (prior size: 10130.4 KB)
+0003.538 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: size is now: 18.80 MB
+0003.543 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3100 files added (on-disk size: 19236.7 KB)
+0003.547 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3200 files added (on-disk size: 19236.7 KB)
+0003.549 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3300 files added (on-disk size: 19236.7 KB)
+0003.552 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3400 files added (on-disk size: 19236.7 KB)
+0003.555 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3500 files added (on-disk size: 19236.7 KB)
+0003.558 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3600 files added (on-disk size: 19236.7 KB)
+0003.561 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3700 files added (on-disk size: 19236.7 KB)
+0003.564 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3800 files added (on-disk size: 19236.7 KB)
+0003.567 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 3900 files added (on-disk size: 19236.7 KB)
+0003.570 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4000 files added (on-disk size: 19236.7 KB)
+0003.571 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (18.2 MB, 4932 files batched, 1001 (4004) added so far); re-opening (prior size: 19236.7 KB)
+0004.706 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: size is now: 24.10 MB
+0004.710 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4100 files added (on-disk size: 24711.5 KB)
+0004.712 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4200 files added (on-disk size: 24711.5 KB)
+0004.714 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4300 files added (on-disk size: 24711.5 KB)
+0004.716 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4400 files added (on-disk size: 24711.5 KB)
+0004.718 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4500 files added (on-disk size: 24711.5 KB)
+0004.720 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4600 files added (on-disk size: 24711.5 KB)
+0004.722 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4700 files added (on-disk size: 24711.5 KB)
+0004.725 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4800 files added (on-disk size: 24711.5 KB)
+0004.727 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.tmp: 4900 files added (on-disk size: 24711.5 KB)
+0005.363 (0) Creating zip file manifest (/home2/myplaced/public_html/test/wp-content/updraft/backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.list-temp.tmp)
+0005.376 (0) Successfully created zip file manifest (size: 413866)
+0005.779 (0) Created plugins zip (0) - 27415.3 KB in 5.6 s (4892.1 KB/s) (sha1: c5859096c4794017bc62b3c5eec048815f892fad, sha256: 058ac7180caceb927fcc2153821bedd99fb6534a347e82c895ef690c52211662)
+0005.781 (0) Beginning creation of dump of themes (split every: 400 MB)
+0005.867 (0) Total entities for the zip file: 171 directories, 761 files (0 skipped as non-modified), 20 MB
+0005.873 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0005.880 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0005.891 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0005.894 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0005.897 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0005.900 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0005.903 (0) Zip: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0007.206 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.tmp: size is now: 8.90 MB
+0007.225 (0) Creating zip file manifest (/home2/myplaced/public_html/test/wp-content/updraft/backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.list-temp.tmp)
+0007.230 (0) Successfully created zip file manifest (size: 52270)
+0007.429 (0) Created themes zip (0) - 9110.7 KB in 1.6 s (5698.8 KB/s) (sha1: 3a1bc42993b5ac839a77a1855638502ce56e2d68, sha256: 45e49ef37abe07bcf50d39b6d70ace2b1c468a326bd28ac2f472c7616cacefc3)
+0007.432 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0007.433 (0) Looking for candidates to backup in: /home2/myplaced/public_html/test/wp-content/uploads
+0007.433 (0) finding files: wpforms: adding to list (1)
+0007.434 (0) finding files: 2021: adding to list (2)
+0007.435 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0007.513 (0) Total entities for the zip file: 9 directories, 92 files (0 skipped as non-modified), 8.3 MB
+0007.673 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-uploads.zip.tmp: size is now: 8.10 MB
+0007.678 (0) Creating zip file manifest (/home2/myplaced/public_html/test/wp-content/updraft/backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-uploads.zip.list-temp.tmp)
+0007.679 (0) Successfully created zip file manifest (size: 5696)
+0007.790 (0) Created uploads zip (0) - 8331.5 KB in 0.3 s (28898.4 KB/s) (sha1: dc1260982780e59e8232d16703deecdf27f418a1, sha256: c50ba95c95a06c8b5b3dc26e2ec731a5762afb94d5a4289c65105de6c65627b4)
+0007.792 (0) Beginning backup of other directories found in the content directory (index: 0)
+0007.793 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0007.793 (0) Looking for candidates to backup in: /home2/myplaced/public_html/test/wp-content
+0007.794 (0) finding files: mu-plugins: adding to list (1)
+0007.795 (0) finding files: themes: skipping: this is the themes directory
+0007.795 (0) finding files: plugins: skipping: this is the plugins directory
+0007.795 (0) finding files: uploads: skipping: this is the uploads directory
+0007.796 (0) finding files: updraft: skipping: this is the updraft directory
+0007.796 (0) finding files: index.php: adding to list (2)
+0007.797 (0) finding files: upgrade: skipping: excluded by options
+0007.854 (0) Total entities for the zip file: 1 directories, 3 files (0 skipped as non-modified), 0 MB
+0007.870 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-others.zip.tmp: size is now: 0.00 MB
+0007.873 (0) Creating zip file manifest (/home2/myplaced/public_html/test/wp-content/updraft/backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-others.zip.list-temp.tmp)
+0007.874 (0) Successfully created zip file manifest (size: 119)
+0007.877 (0) Created others zip (0) - 13.1 KB in 0 s (506.9 KB/s) (sha1: 97890612c859415bb907fbd9b05f125dc5da889c, sha256: 80817c717b010007be7f666414e97e304f1c665105854eaf4bc5c632ef7df26e)
+0007.882 (0) Saving backup status to database (elements: 8)
+0007.884 (0) Beginning creation of database dump (WordPress DB)
+0007.886 (0) SQL compatibility mode is: NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0007.888 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0007.917 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\n/*!50717 SELECT COUNT(*) INTO @rocksdb_has_p_s_session_variables FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'performance_schema' AND TABL (truncated - 2592 bytes total)
+0007.919 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0007.936 (0) Table PrJ_options: Total expected rows (via COUNT): 369
+0007.937 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.953 (0) Table PrJ_options: Rows added in this batch (next record: 25075): 365 (uncompressed bytes in this segment=223232) in 0.02 seconds
+0007.958 (0) Table PrJ_options: finishing file(s) (2, 33 KB)
+0007.962 (0) Table PrJ_users: Total expected rows (via COUNT): 4
+0007.964 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.967 (0) Table PrJ_users: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1889) in 0.01 seconds
+0007.970 (0) Table PrJ_users: finishing file(s) (2, 0.8 KB)
+0007.975 (0) Table PrJ_usermeta: Total expected rows (via COUNT): 81
+0007.976 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.979 (0) Table PrJ_usermeta: Rows added in this batch (next record: 85): 81 (uncompressed bytes in this segment=7801) in 0.01 seconds
+0007.983 (0) Table PrJ_usermeta: finishing file(s) (2, 2.5 KB)
+0007.988 (0) Table PrJ_actionscheduler_actions: Total expected rows (via COUNT): 55
+0007.989 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.992 (0) Table PrJ_actionscheduler_actions: Rows added in this batch (next record: 200): 55 (uncompressed bytes in this segment=24768) in 0.01 seconds
+0007.997 (0) Table PrJ_actionscheduler_actions: finishing file(s) (2, 2.5 KB)
+0008.000 (0) Table PrJ_actionscheduler_claims: Total expected rows (via COUNT): 0
+0008.002 (0) Table PrJ_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=641) in 0.00 seconds
+0008.005 (0) Table PrJ_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0008.008 (0) Table PrJ_actionscheduler_groups: Total expected rows (via COUNT): 2
+0008.009 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.011 (0) Table PrJ_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=713) in 0.00 seconds
+0008.014 (0) Table PrJ_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0008.020 (0) Table PrJ_actionscheduler_logs: Total expected rows (via COUNT): 155
+0008.020 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.024 (0) Table PrJ_actionscheduler_logs: Rows added in this batch (next record: 574): 155 (uncompressed bytes in this segment=14180) in 0.01 seconds
+0008.027 (0) Table PrJ_actionscheduler_logs: finishing file(s) (2, 2 KB)
+0008.034 (0) Table PrJ_commentmeta: Total expected rows (via COUNT): 0
+0008.036 (0) Table PrJ_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=691) in 0.01 seconds
+0008.039 (0) Table PrJ_commentmeta: finishing file(s) (2, 0.4 KB)
+0008.043 (0) Table PrJ_comments: Total expected rows (via COUNT): 1
+0008.044 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.046 (0) Table PrJ_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2144) in 0.01 seconds
+0008.050 (0) Table PrJ_comments: finishing file(s) (2, 0.7 KB)
+0008.055 (0) Table PrJ_links: Total expected rows (via COUNT): 0
+0008.057 (0) Table PrJ_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1316) in 0.00 seconds
+0008.060 (0) Table PrJ_links: finishing file(s) (2, 0.5 KB)
+0008.067 (0) Table PrJ_postmeta: Total expected rows (via COUNT): 485
+0008.068 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.080 (0) Table PrJ_postmeta: Rows added in this batch (next record: 686): 485 (uncompressed bytes in this segment=56818) in 0.02 seconds
+0008.084 (0) Table PrJ_postmeta: finishing file(s) (2, 11.1 KB)
+0008.091 (0) Table PrJ_posts: Total expected rows (via COUNT): 88
+0008.092 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.099 (0) Table PrJ_posts: Rows added in this batch (next record: 156): 88 (uncompressed bytes in this segment=94513) in 0.01 seconds
+0008.104 (0) Table PrJ_posts: finishing file(s) (2, 20.7 KB)
+0008.108 (0) Table PrJ_term_relationships: Total expected rows (approximate): 333
+0008.112 (0) Table PrJ_term_relationships: Rows added in this batch (next record: 100000): 331 (uncompressed bytes in this segment=5375) in 0.01 seconds
+0008.115 (0) Table PrJ_term_relationships: finishing file(s) (2, 1.2 KB)
+0008.123 (0) Table PrJ_term_taxonomy: Total expected rows (via COUNT): 93
+0008.124 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.126 (0) Table PrJ_term_taxonomy: Rows added in this batch (next record: 95): 93 (uncompressed bytes in this segment=4677) in 0.01 seconds
+0008.130 (0) Table PrJ_term_taxonomy: finishing file(s) (2, 1.1 KB)
+0008.136 (0) Table PrJ_termmeta: Total expected rows (via COUNT): 0
+0008.139 (0) Table PrJ_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=664) in 0.01 seconds
+0008.142 (0) Table PrJ_termmeta: finishing file(s) (2, 0.4 KB)
+0008.147 (0) Table PrJ_terms: Total expected rows (via COUNT): 93
+0008.148 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.151 (0) Table PrJ_terms: Rows added in this batch (next record: 95): 93 (uncompressed bytes in this segment=5273) in 0.01 seconds
+0008.154 (0) Table PrJ_terms: finishing file(s) (2, 1.8 KB)
+0008.161 (0) Table PrJ_wpforms_tasks_meta: Total expected rows (via COUNT): 71
+0008.162 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.163 (0) Table PrJ_wpforms_tasks_meta: Rows added in this batch (next record: 71): 71 (uncompressed bytes in this segment=6108) in 0.01 seconds
+0008.167 (0) Table PrJ_wpforms_tasks_meta: finishing file(s) (2, 1.2 KB)
+0008.168 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_options.table.tmpr25076.gz (1/17/fopen): adding to final database dump
+0008.169 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_options.table.gz (2/17/fopen): adding to final database dump
+0008.170 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_users.table.tmpr5.gz (3/17/fopen): adding to final database dump
+0008.171 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_users.table.gz (4/17/fopen): adding to final database dump
+0008.171 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_usermeta.table.tmpr86.gz (5/17/fopen): adding to final database dump
+0008.172 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_usermeta.table.gz (6/17/fopen): adding to final database dump
+0008.172 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_actionscheduler_actions.table.tmpr201.gz (7/17/fopen): adding to final database dump
+0008.173 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_actionscheduler_actions.table.gz (8/17/fopen): adding to final database dump
+0008.174 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_actionscheduler_claims.table.tmpr0.gz (9/17/fopen): adding to final database dump
+0008.174 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_actionscheduler_claims.table.gz (10/17/fopen): adding to final database dump
+0008.175 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_actionscheduler_groups.table.tmpr3.gz (11/17/fopen): adding to final database dump
+0008.175 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_actionscheduler_groups.table.gz (12/17/fopen): adding to final database dump
+0008.176 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_actionscheduler_logs.table.tmpr575.gz (13/17/fopen): adding to final database dump
+0008.176 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_actionscheduler_logs.table.gz (14/17/fopen): adding to final database dump
+0008.177 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_commentmeta.table.tmpr0.gz (15/17/fopen): adding to final database dump
+0008.178 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_commentmeta.table.gz (16/17/fopen): adding to final database dump
+0008.178 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_comments.table.tmpr2.gz (17/17/fopen): adding to final database dump
+0008.179 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_comments.table.gz (18/17/fopen): adding to final database dump
+0008.179 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_links.table.tmpr0.gz (19/17/fopen): adding to final database dump
+0008.180 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_links.table.gz (20/17/fopen): adding to final database dump
+0008.180 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_postmeta.table.tmpr687.gz (21/17/fopen): adding to final database dump
+0008.181 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_postmeta.table.gz (22/17/fopen): adding to final database dump
+0008.181 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_posts.table.tmpr157.gz (23/17/fopen): adding to final database dump
+0008.182 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_posts.table.gz (24/17/fopen): adding to final database dump
+0008.183 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_term_relationships.table.tmpr100001.gz (25/17/fopen): adding to final database dump
+0008.183 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_term_relationships.table.gz (26/17/fopen): adding to final database dump
+0008.184 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_term_taxonomy.table.tmpr96.gz (27/17/fopen): adding to final database dump
+0008.185 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_term_taxonomy.table.gz (28/17/fopen): adding to final database dump
+0008.185 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_termmeta.table.tmpr0.gz (29/17/fopen): adding to final database dump
+0008.186 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_termmeta.table.gz (30/17/fopen): adding to final database dump
+0008.186 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_terms.table.tmpr96.gz (31/17/fopen): adding to final database dump
+0008.187 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_terms.table.gz (32/17/fopen): adding to final database dump
+0008.187 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_wpforms_tasks_meta.table.tmpr72.gz (33/17/fopen): adding to final database dump
+0008.188 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db-table-PrJ_wpforms_tasks_meta.table.gz (34/17/fopen): adding to final database dump
+0008.193 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db.gz: finished writing out complete database file (80.9 KB)
+0008.205 (0) Total database tables backed up: 17 (backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db.gz, size: 82911, sha1: c7926e803a52d9d973338e859dc46bdb9659dc5e, sha256: eca74f78e690544c1e398417b3047dd6cf9a61e9839abaa62fcdf318f1343791)
+0008.210 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0008.211 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0008.212 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0008.212 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-others.zip: others: This file has not yet been successfully uploaded: will queue
+0008.213 (0) backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db.gz: db: This file has not yet been successfully uploaded: will queue
+0008.213 (0) Saving backup history. Total backup size: 43.9 MB
+0008.215 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0008.218 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0008.219 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-692e31a8839f186205f2db3711cc947c)
+0008.863 (0) Google Drive: creating path: /UpdraftPlus
+0010.317 (0) Google Drive: quota usage: used=438.4 MB, total=102400 MB, available=101961.6 MB
+0010.319 (0) Google Drive: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip: Attempting to upload to Google Drive (into folder id: 1AGJYZLQtNiqHGLhBDdSbXbE1Sgbhl40A)
+0011.121 (0) Googledrive chunked upload: 3.7 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 50.8 / 58.5)
+0011.593 (0) Googledrive chunked upload: 11.2 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 50.8 / 58.5)
+0012.061 (0) Googledrive chunked upload: 26.1 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 50.8 / 58.5)
+0013.380 (0) Googledrive chunked upload: 56 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 50.8 / 58.5)
+0015.455 (0) Googledrive chunked upload: 100 % uploaded (15728640)
+0015.458 (0) Google Drive: OK: Archive backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip uploaded in 5.14 seconds
+0015.459 (0) Recording as successfully uploaded: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip
+0015.471 (0) Deleting local file: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip: OK
+0015.472 (0) Deleting zip manifest (backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-plugins.zip.list.tmp)
+0015.746 (0) Google Drive: quota usage: used=465.2 MB, total=102400 MB, available=101934.8 MB
+0015.747 (0) Google Drive: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip: Attempting to upload to Google Drive (into folder id: 1AGJYZLQtNiqHGLhBDdSbXbE1Sgbhl40A)
+0016.557 (0) Googledrive chunked upload: 11.2 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 50.8 / 58.5)
+0017.047 (0) Googledrive chunked upload: 33.7 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 50.9 / 58.5)
+0017.680 (0) Googledrive chunked upload: 78.7 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 50.9 / 58.5)
+0019.237 (0) Googledrive chunked upload: 100 % uploaded (7340032)
+0019.239 (0) Google Drive: OK: Archive backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip uploaded in 3.49 seconds
+0019.240 (0) Recording as successfully uploaded: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip
+0019.243 (0) Deleting local file: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip: OK
+0019.243 (0) Deleting zip manifest (backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-themes.zip.list.tmp)
+0019.497 (0) Google Drive: quota usage: used=474.1 MB, total=102400 MB, available=101925.9 MB
+0019.499 (0) Google Drive: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-uploads.zip: Attempting to upload to Google Drive (into folder id: 1AGJYZLQtNiqHGLhBDdSbXbE1Sgbhl40A)
+0020.335 (0) Googledrive chunked upload: 12.3 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 50.8 / 58.5)
+0020.854 (0) Googledrive chunked upload: 36.9 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 50.9 / 58.5)
+0021.566 (0) Googledrive chunked upload: 86 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 50.9 / 58.5)
+0022.815 (0) Googledrive chunked upload: 100 % uploaded (7340032)
+0022.818 (0) Google Drive: OK: Archive backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-uploads.zip uploaded in 3.32 seconds
+0022.819 (0) Recording as successfully uploaded: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-uploads.zip
+0022.824 (0) Deleting local file: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-uploads.zip: OK
+0022.825 (0) Deleting zip manifest (backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-uploads.zip.list.tmp)
+0023.082 (0) Google Drive: quota usage: used=482.2 MB, total=102400 MB, available=101917.8 MB
+0023.083 (0) Google Drive: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-others.zip: Attempting to upload to Google Drive (into folder id: 1AGJYZLQtNiqHGLhBDdSbXbE1Sgbhl40A)
+0024.594 (0) Googledrive chunked upload: 100 % uploaded
+0024.596 (0) Google Drive: OK: Archive backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-others.zip uploaded in 1.51 seconds
+0024.597 (0) Recording as successfully uploaded: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-others.zip
+0024.598 (0) Deleting local file: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-others.zip: OK
+0024.599 (0) Deleting zip manifest (backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-others.zip.list.tmp)
+0024.866 (0) Google Drive: quota usage: used=482.2 MB, total=102400 MB, available=101917.8 MB
+0024.867 (0) Google Drive: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db.gz: Attempting to upload to Google Drive (into folder id: 1AGJYZLQtNiqHGLhBDdSbXbE1Sgbhl40A)
+0026.317 (0) Googledrive chunked upload: 100 % uploaded
+0026.319 (0) Google Drive: OK: Archive backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db.gz uploaded in 1.45 seconds
+0026.320 (0) Recording as successfully uploaded: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db.gz
+0026.321 (0) Deleting local file: backup_2021-11-10-1831_placedumarche_test_b5b50c7988e9-db.gz: OK
+0026.324 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0026.325 (0) Number of backup sets in history: 1; groups (db): 1
+0026.325 (0) Examining (for databases) backup set with group_id=0, nonce=b5b50c7988e9, datestamp=1636569065 (Nov 10 2021 18:31:05)
+0026.326 (0) This backup set is the backup set just made, so will not be deleted.
+0026.326 (0) Number of backup sets in history: 1; groups (files): 1
+0026.326 (0) Examining (for files) backup set with nonce=b5b50c7988e9, datestamp=1636569065 (Nov 10 2021 18:31:05)
+0026.326 (0) This backup set is the backup set just made, so will not be deleted.
+0026.327 (0) This backup set is the backup set just made, so will not be deleted.
+0026.327 (0) This backup set is the backup set just made, so will not be deleted.
+0026.327 (0) This backup set is the backup set just made, so will not be deleted.
+0026.327 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0026.327 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0026.329 (0) Resume backup (b5b50c7988e9, 0): finish run
+0026.330 (0) Decremented the semaphore (fd) by 1
+0026.331 (0) Semaphore (fd) unlocked
+0026.332 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0026.334 (0) No email will/can be sent - the user has not configured an email address.
+0026.334 (0) The backup apparently succeeded and is now complete

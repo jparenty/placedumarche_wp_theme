@@ -1,0 +1,2002 @@
+/*
+Theme Name: Place du Marché Theme
+Author: Jean Parenty
+Text Domain: pdm
+*/
+
+/*header {*/
+/*    background: #e7e7e7;*/
+
+/*}*/
+
+
+/*.navbar > .container::after {*/
+/*    content: none !important;*/
+/*}*/
+
+/*.navbar > .container::before {*/
+/*    content: none !important;*/
+/*}*/
+
+/*.nav-link{*/
+/*    padding-left: 15px !important;*/
+/*}*/
+
+/*@media (min-width: 768px) { */
+/*    .navbar-brand {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*display sub menu when hover over navbar*/
+/*@media all and (min-width: 768px) {*/
+/*	.navbar .nav-item .dropdown-menu{ display: none; }*/
+/*	.navbar .nav-item:hover .nav-link{   }*/
+/*	.navbar .nav-item:hover .dropdown-menu{ display: block; }*/
+/*	.navbar .nav-item .dropdown-menu{ margin-top:0; }*/
+/*}	*/
+
+@font-face { 
+    font-family: Raleway; 
+    src: url(https://myplacedumarche.com/test/wp-content/themes/placedumarche/fonts/Raleway-VariableFont_wght.ttf); 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(https://myplacedumarche.com/test/wp-content/themes/placedumarche/fonts/Montserrat-Regular.ttf); 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Montserrat-Semibold;
+    src: url(https://myplacedumarche.com/test/wp-content/themes/placedumarche/fonts/Montserrat-SemiBold.otf); 
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url(https://myplacedumarche.com/test/wp-content/themes/placedumarche/fonts/OpenSans-Regular.ttf); 
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /*height:  100%; commented this out bc would make the bottom take up entire browser window */
+  box-sizing: border-box; /* potentially problematic! */
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+body {
+    margin: 0px;
+    font-family: Open-Sans;
+}
+
+/********* HEADER CSS: *********/
+
+.site-branding {
+    max-width: 350px;
+    margin: 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-branding-mobile {
+    display: none;
+}
+
+.top-logo {
+    text-decoration: none;
+}
+
+.site-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 0;
+    text-align: center;
+}
+
+
+.logo {
+    width: 40px;
+}
+
+.site-title {
+    margin: 0px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: #004D80;
+    font-weight: bold;
+   
+}
+
+.site-description {
+    color: #004D80;
+    font-size: 12px;
+    font-style: normal;
+    font: Arial;
+    margin: 0px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.above-nav {
+    font-family: Montserrat;
+    width: auto;
+  
+}
+
+#myTopnav {
+    align-self: center;
+    width: auto;
+}
+
+.top-navigation {
+    /*height: 100%; COMMENTED THIS OUT BECAUSE IT WOULD MAKE THE TOP OF THE PAGE TAKE UP ALL THE SPACE POSSIBLE ON THE SCREEN */
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    padding-top:10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    /*.top-navigation {*/
+    /*    background: transparent;*/
+    /*}*/
+    .site-title {
+        display: none;
+    }
+    .site-description {
+        display: none;
+    }
+}
+
+.menu-item {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+
+.sub-menu .menu-item {
+    float: none;
+    text-align: left;
+    padding: 12px 16px;
+    display: block;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+
+.current-menu-item, .menu-item:hover, .current-menu-parent {
+    /* border-bottom: 2px solid #F3C577; */
+    /* padding-bottom: 10px; */
+    text-decoration: underline #F3C577;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+
+
+ul.sub-menu {
+     padding: 0px; 
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+}
+
+.sub-menu {
+    padding-inline-start: 0px;
+    margin-left: -16px;
+    margin-top: 14px;
+}
+
+ul.sub-menu a {
+    color: black;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color:  black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration-color: #F3C577;
+}
+
+
+.menu-item-has-children {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-item-has-children:hover .sub-menu,  .sub-menu:hover {
+    display: block;
+}
+
+.menu-navigation-menu-container {
+    height: 100%;
+    display: inline-block;
+    font-family: Montserrat;
+}
+
+ul {
+    margin: auto;
+    padding-inline-start: 0px;
+}
+
+.menu-btn{
+    display:none;
+}
+
+.footer {
+    margin-top: 1%;
+}
+.footer .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    background-color: #011D30;
+    width: 100%;
+}
+
+.menu-footer-menu-container {
+    text-align: center;
+}
+
+.footer .menu-item > a {
+    color: white;
+}
+
+.footer .menu-item {
+    padding: 12px 16px;
+}
+
+.bottom-footer {
+    width: 100%;
+    text-align: center;
+}
+
+.copyright, .contact-tel {
+    color: #a6a6a6;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .above-nav {
+        display: none;
+    }
+    
+    #myTopnav {
+        width: 100%;
+    }
+    
+    .current-menu-item {
+        background-color:  transparent;
+    }
+    
+    .top-navigation {
+        /*height: 100%;*/
+    }
+    
+    .site-branding-mobile {
+        height: 48px;
+        display: inline-block;
+        position: absolute;
+        padding-top: 7px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        font-family: Montserrat;
+    }
+    
+    .site-branding-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+    }
+    
+    .menu-item {
+        float: none;
+        
+    }
+    .sub-menu .menu-item:hover, .current-menu-item a, .menu-item a:hover, .current-menu-parent > a {
+        text-decoration: underline;
+        text-decoration-color: #F3C577;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 2px;
+    }
+    
+    .menu-item:hover, .sub-menu .menu-item:hover > a {
+        background-color: transparent;
+    }
+    
+    .menu-item a {
+        display: inline-block;
+    }
+    
+    .navigation .show {
+        visibility: visible;
+    }
+    
+    .menu-item-48.show {
+        transition-delay: 0.1s;
+    }
+ 
+    .menu-item-60.show {
+        transition-delay: 0.2s;
+    }
+ 
+    .menu-item-61.show {
+        transition-delay: 0.3s;
+    }
+ 
+    .menu-item-50.show {
+        transition-delay: 0.4s;
+    }
+    
+    .menu-item-49.show {
+        transition-delay: 0.5s;
+    }
+    
+  
+    
+    .menu-navigation-menu-container {
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    .container.responsive .menu-item {
+        float: none;
+        display: block;
+        text-align: left; 
+        background-color: white; /* HERE TO SET BACKGROUND OF MENU ON MOBILE- now the drop down menu goes OVER content which is arguably much better. */
+        /* TODO: Work on styling the drop down menu to be prettier */
+    }
+  
+    .menu-btn {
+        margin-top: 6px;
+        display: block;
+        float: right;
+        height: 48px;
+        width: 48px;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+    
+    }
+
+    .btn-box {
+        margin-top: 30%;
+        margin-bottom: 30%;
+    }
+
+    .menu-btn .btn-line {
+        width: 28px;
+        height: 5px;
+        margin: 0 0 5px 0;
+        background: #011d30;
+        transition: all 0.5s ease-out;
+        border-radius: 2px;
+    }
+
+    /* Adding transform to the X */
+    .menu-btn.close {
+        transform: rotate(180deg);
+    
+    }
+ 
+    /* Styling the three lines
+    to make it an X */
+    .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 3px);
+    }
+    /*translate(5px, 5px) (when btn line heiht is set to 4px)*/
+    
+    .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0;
+    }
+ 
+    .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(11px, -9px);
+    }
+    /*translate(7px, -6px)*/
+    
+    .container.responsive {
+        position: relative;
+      
+    }
+
+    /*.container.responsive .dropdown {float: none;}*/
+  
+    .container.responsive .sub-menu {
+        position: relative;
+      
+    }
+    .responsive .menu-navigation-menu-container {
+        margin-top: 60px;
+        position: absolute; /* THIS IS GONNA BREAK THE WEBSITE PROBABLY BUT LETS MAKE IT WORK FOR HOMEPAGE!!! */
+        background-color: white;
+        right: 0px;
+        width: 55%;
+    }
+    
+    .footer .menu-item {
+        display: block;
+    }
+    
+    .footer .container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+}
+
+/********* HOME PAGE CSS *********/
+
+/* headers in montserrat bold; body in open sans */
+/* 
+If we want to stick with viewport font sizes:
+Big title: 50 -> 3.5vw
+Medium title: 32 -> 2.24vw
+Small title: 16 -> 1.12vw
+Body of text: 20 -> 1.4vw
+*/
+
+/* 320 - 480 smallest screen size*/
+
+
+/*.produce-img {*/
+/*    max-width: 100%;*/
+/*    margin-top: -20px;*/
+/*}*/
+
+.home .btn-line {
+    background: #f5f5f7;
+}
+
+/* image scaling and fit on home page */
+.fill {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    margin-top: -64px;
+    background: url('/test/wp-content/themes/placedumarche/media/images/vegetablesyoudonteat1.jpg') no-repeat;
+    background-position: 47% 26%;
+    background-size: cover;
+}
+
+#produce-img {
+    height: 100%;
+}
+
+#world-map {
+    display: none;
+}
+
+
+
+.image-container {
+    height: 100vh;
+}
+
+.title-text-container {
+    padding-left: 24px;
+    padding-right: 60px;
+    /*transform: translateY(90%);*/
+    z-index: -1;
+    position: absolute;
+    top: 30%;
+}
+
+.big-title {
+    font-family: Montserrat;
+    font-size: 26px;
+}
+    
+.medium-title {
+    font-family: Montserrat;
+    font-size: 22px;
+}
+
+
+    
+.small-title {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+#welcome-text-medium {
+    color:#f5cf42;
+}
+
+#welcome-text-big {
+    color: #F5F5F7;
+}
+
+#welcome-text-small {
+    color: #F5F5F7;
+    font-size: 14px;
+    padding-top: 6px;
+}
+
+.hyperlink-container {
+    height: 100vh;
+    background-color: #011D30;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hyperlink-item {
+    display: flex;
+    padding: 0px 20px;
+}
+
+/*.home-hyperlink-text {*/
+/*    padding-top: 8px;*/
+/*}*/
+
+.home-hyperlink {
+    text-decoration: underline;
+    color: #F5F5F7;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.home-icons {
+    width: 70px;
+    filter: invert(93%) sepia(43%) saturate(2504%) hue-rotate(323deg) brightness(102%) contrast(92%);
+}
+
+.mission-container {
+    position: relative;
+}
+
+.mission-text {
+    max-width: 100%;
+    text-align: center;
+}
+
+#big-text-overlay {
+    font-family: 'Montserrat-Semibold';
+    color: #6f6f6f;
+    padding-top: 54px;
+    padding-bottom: 40px;
+    padding-left: 4px;
+    padding-right: 4px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+#small-text-overlay {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    color: #6f6f6f;
+    padding-top: 32px;
+    line-height: 1.4;
+}
+
+#source-text {
+    padding-top: 20px;
+    font-size: 10px;
+}
+
+.highlight {
+    color: #1e4a7f;
+}
+
+.line-break {
+    background-color: black;
+    width: 90%;
+    height: 0px;
+    margin-bottom: 56px;
+}
+
+#mtl-map {
+    max-width: 100%;
+    margin: 60px auto;
+}
+
+#food-insecurity {
+    
+}
+
+.stats-container {
+    height: 100vh;
+    background-color: #011D30;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+
+.stats-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    color: #F5F5F7;
+    padding: 10px 0px 20px 0px;
+}
+
+.stat-description {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    padding: 0px 20px;
+}
+
+.line-break-stat {
+    background-color: #F5CF42;
+    width: 27%;
+    border: none;
+    height: 2px;
+    margin: 16px;
+}
+
+.stat-number {
+    font-family: 'Montserrat';
+    font-size: 24px;
+}
+
+.btns-home {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    margin: auto;
+    font-family: 'Montserrat';
+    align-items: center;
+    margin:auto;
+}
+
+.btn-home {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #011D30;
+    color: #f5f5f7;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: 202px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.donation-box {
+    background-color: #eeeeef;
+    margin: 60px auto;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+#donation-question {
+    padding: 0px 25px 0px 24px;
+    font-family: 'Montserrat';
+    font-size: 23px;
+}
+
+#donation-encouragement {
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #011d30;
+}
+
+.btn-donation {
+    background-color: #f5cf42;
+    text-decoration: none;
+    align-self: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #011d30;
+    font-family: 'Montserrat';
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.return-to-top-home {
+    height: 34px;
+    width: 34px;
+    background-color: #eeeeef;
+    border-radius: 4px;
+    /*margin: auto;*/
+    /*margin-bottom: 40px;*/
+    /*margin-top: 40px;*/
+    margin: 40px 0px 40px auto;
+    padding: 10px;
+}
+
+@media screen and (max-width: 450px) {
+    .site-title {
+        font-size: 1em;
+    }
+    .site-description {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 320px) { /* controls appearance of site branding on tablets */
+    .site-branding-mobile .site-title {
+        color: #011d30;
+        display: block;
+    }
+    
+    .site-branding-mobile .site-description {
+        color: #011d30;
+        display: block;
+    }
+    
+    .home .site-branding-mobile .site-title {
+        color: #F5F5F7;
+    }
+    
+    .home .site-branding-mobile .site-title a {
+        color: #F5F5F7;
+    }
+    
+    .home .site-branding-mobile .site-description {
+        color: #F5F5F7;
+    }
+    
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+    .blue-container-adjust-tablets {
+        margin: auto;
+        width: 100%;
+        padding: 10% 8px;
+        flex-flow: row nowrap;
+        height: auto;
+        align-items: start;
+    }
+    
+    .mission-container {
+        margin: 60px auto;
+        margin-bottom: 84px;
+    }
+    
+    #world-map {
+        max-width: 85%;
+        z-index: -1;
+        display: block;
+        position: absolute;
+        overflow: hidden;
+    }
+    
+    .line-break {
+        margin: auto;
+    }
+    
+    #food-insecurity {
+        margin: 60px auto;
+    }
+    
+    .stats-container {
+        padding: 20px;
+        margin: 0px 0px 60px 0px;
+    }
+    
+    .donation-box {
+        margin: 60px auto;
+    }
+    
+    #big-text-overlay {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    #small-text-overlay {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .btns-home {
+        margin: 30 auto;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 432px) {
+    .donation-box {
+        margin: 60px 15px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1000px) {
+    #world-map {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .fade {
+        opacity: 0;
+    }
+    
+    #world-map {
+        
+    }
+    
+    .top-navigation {
+        background-color: white;
+    }
+    
+    
+    .fill {
+        position: relative;
+        margin-top: -102px;
+        width: 100%;
+        background-position: center;
+    }
+    
+    .produce-img {
+        max-width:100%;
+        margin-top: 20px;
+    }
+    
+    .big-title {
+        font-family: Montserrat;
+        font-size: 50px;
+    }
+    
+    .medium-title {
+        font-family: Montserrat;
+        font-size: 32px;
+    }
+    
+    .small-title {
+        font-family: Montserrat;
+        font-size: 22px;
+    }
+    
+    /*.body-text {*/
+    /*    font-family: Open-Sans;*/
+    /*    font-size: 1.4vw;*/
+    /*}*/
+    
+    
+    
+    
+    /* Produce image and overlay text */
+    
+    .image-container {
+        position: relative;
+        z-index: -1;
+    }
+    
+    .title-text-container {
+        /*font-family: Montserrat;*/
+        position: absolute;
+        max-width:100%;
+        top:30%;
+        right:0;
+        left:10%;
+        bottom:0;
+        /*border-style:solid;
+        border-color:red; debug border */
+        height: fit-content;
+    }
+    
+    #welcome-text-medium {
+        position: absolute;
+        color:#f5cf42;
+        top:0;
+        width:100%;
+    }
+    
+    #welcome-text-big {
+        position: absolute;
+        color:#F5F5F7;
+        width:70%;
+    }
+    
+    #welcome-text-small {
+        position: absolute;
+        color:#F5F5F7;
+        padding-top:13px;
+        font-size: 16px;
+    }
+    
+    
+    
+    
+    /* Blue hyperlink box */
+    
+    .hyperlink-container {
+        max-width: 85%;
+        height: 450px;
+        margin: auto;
+        position: relative;
+        transform: translateY(-50%);
+        background-color: #011d30;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        border-radius: 8px;
+        padding: 0;
+    }
+    
+    .hyperlink-container a {
+        text-decoration: none;
+    }
+    
+    .hyperlink-item:hover {
+        opacity: 0.4;
+    }
+    
+    .hyperlink-item {
+        text-align: center;
+        /*flex-grow: 1;*/
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        /*flex: 1 1 0px;*/
+        /* margin-top: 30; */
+    }
+    
+    .home-hyperlink-text {
+        color:#F5F5F7;
+        text-decoration: none;
+        
+    }
+    
+    .home-icons {
+        width: 46%;
+        height: 46%;
+        filter: invert(93%) sepia(43%) saturate(2504%) hue-rotate(323deg) brightness(102%) contrast(92%);
+    }
+    
+    .btn-arrow-right.home {
+        max-height: 62px;
+    }
+    
+    
+    /* World map overlay section */
+    
+    .mission-container {
+        max-width: 100%;
+        margin: auto;
+        position: relative;
+        
+    }
+    
+    .mission-text {
+        font-family: Montserrat;
+        color: #6f6f6f;
+        max-width:100%;
+        top:-50px;
+        right:0;
+        left:0;
+        bottom:0;
+        position: absolute;
+        text-align: center;
+        margin: auto;
+    }
+    
+    #big-text-overlay {
+        font-size: 19px;
+        top: 10%;
+        position: absolute;
+        font-family: Montserrat-Semibold;
+        width: auto;
+    }
+    
+    #small-text-overlay {
+        font-size: 12px;
+        position: static;
+        /*top: 200%;*/
+        width: auto;
+        font-family: Montserrat;
+    }
+    
+    #source-text {
+        font-size: 10px;
+        color: #a8a8a8;
+        position: static;
+        top: 130%;
+        width: 100%;
+    }
+    
+    .highlight {
+        color: #1e4a7f;
+    }
+    
+    #world-map {
+        width: 75%;
+        margin: auto;
+        position: static;
+        display: block;
+    }
+    
+    
+    
+    
+    /* Food insecurity section */
+    
+    .line-break {
+        background-color: black;
+        width: 80%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 1px;
+        border-style: none;
+    }
+    
+    #food-insecurity {
+        text-align: center;
+    }
+    
+    #mtl-map {
+        padding: 10px;
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .stats-container {
+        max-width: 92%;
+        border-radius: 8px;
+        width: 1040px;
+        margin: auto;
+    }
+    
+    /*.stat-box-fix {*/
+    /*    transform: translateY(0%);*/
+    /*}*/
+    
+    .line-break-stat {
+        background-color: #ffd744;
+        width: 70px;
+        height: 2px;
+        border: none;
+        margin: 30px;
+    }
+    
+    .stats-item {
+        
+    }
+    
+    .stat-number {
+        /*font-size: 2vw;*/
+    }
+    
+    .stat-description {
+        /*font-size: 0.9vw;*/
+    }
+    
+    
+    
+    /* Bottom of home page */
+    
+    .btns-home {
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 78%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding: 30px 60px 30px 60px;
+        margin-top: 60px;
+    }
+    
+    .btn-home {
+        font-size: 14px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    
+    .donation-box {
+        background-color: #eeeeef;
+        text-align: center;
+        padding: 20px;
+        max-width: 700px;
+        border-radius: 8px;
+        margin-bottom: 60px;
+    }
+    
+    .btn-donation {
+        /*background-color: #F5CF42;*/
+        /*width: 300px;*/
+        /*margin: auto;*/
+        /*padding: 20px;*/
+        /*margin-top: 20px;*/
+        /*border-radius: 8px;*/
+    }
+    
+    #donation-encouragement {
+        padding: 10px;
+    }
+    
+    .hideme {
+        /*opacity: 0;*/
+    }
+    
+    .return-to-top-home {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 2000px) {
+    .hyperlink-container {
+        padding: 30px 0px;
+    }
+    
+    .home-icons {
+        height: 3vw;
+        width: 3vw;
+    }
+    
+    .home-hyperlink-text {
+        font-size: 1.1vw;
+    }
+    
+    #world-map {
+        width: 1200px;
+    }
+    
+    #big-text-overlay {
+        font-size: 1.1vw;
+    }
+    
+    #small-text-overlay {
+        font-size: 0.8vw;
+    }
+    
+    #source-text {
+        font-size: 0.6vw;
+    }
+    
+    .stats-container {
+        width: auto;
+    }
+    
+    .stat-number {
+        font-size: 2vw;
+    }
+    
+    .stat-description {
+        font-size: 0.8vw;
+    }
+    
+}
+
+/*@media screen and (min-width: 1500px) {*/
+   
+/*}*/
+@media screen and (max-width: 1701px) {
+    .hyperlink-container {
+        height: 517px;
+    }
+}
+
+
+/* END HOME PAGE CSS */
+
+
+/******** REGISTER YOUR ORG CSS ***********/
+
+.intro-blob {
+    color: #3A6480;
+    font-family: Montserrat;
+}
+
+.reg-form, .inq-form, .gen-form {
+    font-family: Montserrat-Semibold;
+    color: #011D30;
+}
+
+.reg-form-options {
+    font-family: Open-Sans;
+    color: #585858;
+}
+
+input[type="text"]
+{
+    font-size:16px;
+    font-family: Open-Sans;
+    color: #585858;
+    background-color: #f5f5f7;
+    border-radius: 4px;
+    border-color: #707070;
+    border-style: solid;
+    border-width: thin;
+    padding: 5px;
+}
+
+.full-field {
+    width: 100%;
+}
+
+.short-field {
+    
+}
+
+.medium-field {
+    
+}
+
+.wide-input {
+    width: 100%;
+}
+
+fieldset {
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+    font-size:16px;
+    font-family: Open-Sans;
+    color: #585858;
+    background-color: #f5f5f7;
+    border-radius: 4px;
+    border-color: #707070;
+    border-style: solid;
+    border-width: thin;
+}
+
+.btn-submit {
+    background-color: #011d30;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 6px;
+    cursor: pointer;
+    border-style: none;
+    border-width: 0px;
+    border-color: transparent;
+    font-family: 'Montserrat-Semibold';
+    font-size: 16px;
+    
+}
+
+.btn-submit:hover {
+    opacity: 0.8;
+}
+
+.demographics {
+    column-count: 1;
+}
+
+.services {
+    column-count: 1;
+}
+
+.roles {
+    column-count: 1;
+}
+
+@media screen and (max-width: 412px) {
+    .medium-field {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 242px) {
+    .short-field {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 410px) {
+    .demographics {
+        column-count: 2;
+    }
+    .services {
+        column-count: 2;
+    }
+    .roles {
+        column-count: 2;
+    }
+}
+@media screen and (min-width: 560px) {
+    .demographics {
+        column-count: 3;
+    }
+    .services {
+        column-count: 3;
+    }
+    .roles {
+        column-count: 3;
+    }
+}
+@media screen and (min-width: 769px) {
+    .services {
+        column-count: 4;
+    }
+    .roles {
+        column-count: 3;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .services {
+        column-count: 5;
+    }
+    .roles {
+        column-count: 4;
+    }
+}
+
+/*input:invalid {*/
+/*  border: 2px dashed red;*/
+/*}*/
+
+/*input:valid {*/
+/*  border: 2px solid black;*/
+/*}*/
+
+
+
+/******** END REGISTER YOUR ORG CSS ***********/
+
+
+/********* INQUIRIES CSS + CONTACT US + ABOUT US *********/
+
+.inquiries-content-list {
+    list-style: inside;
+    padding-left: 5%;
+}
+
+.inq-gen-full-name {
+    display: flex;
+    gap: 1%
+}
+
+@media screen and (max-width: 840px) {
+    .inq-gen-full-name {
+        flex-direction: column;
+        gap: 14px;
+    }
+}
+
+.pdm-about-logo, .mcfac-about-logo{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.mcfac-about-logo {
+    width: 24%;
+}
+
+/********* END INQUIRIES CSS: *********/
+
+
+/********* ORG DIRECTORY CSS: *********/
+
+.page-title {
+    font-family: Montserrat;
+    display: flex;
+    margin-top: 4%;
+    align-self: center;
+}
+
+.page-title > h1 {
+    margin: 0;
+}
+
+.icon-location {
+    width: 4%;
+    align-self: center;
+    filter: invert(93%) sepia(44%) saturate(1475%) hue-rotate(323deg) brightness(103%) contrast(92%);
+    margin-left: 2%;
+}
+
+.map {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.acf-map {
+    height: 600px;
+    border: #ccc solid 1px;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.org-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    column-gap: 4%;
+     /*row gap is defined by the margin-bottom value of .org-container*/
+}
+
+.org-list > a {
+    text-decoration: none;
+    color: black;
+}
+
+.org-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 13%;
+}
+
+.org-logo-container {
+    height: 150px;
+    
+}
+
+.helper {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.org-logo {
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 96%;
+}
+
+.org-title {
+    color: #004D80;
+}
+
+.org-descrption {
+    color: #3A6480;
+    font-weight: 550;
+}
+
+.btn-readmore {
+    margin-top: auto;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #011D30;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.btn-readmore:hover {
+    opacity: 0.8;
+}
+
+.btn-readmore-text {
+    align-self: center;
+}
+
+.btn-arrow-right {
+    max-height: 30px;
+    filter: invert(93%) sepia(44%) saturate(1475%) hue-rotate(323deg) brightness(103%) contrast(92%);
+}
+
+.btn-find-ideal-org {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #011D30;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 11px;
+    text-decoration: none;
+    display: flex;
+    width: 23%;
+    justify-content: center;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+.btn-find-ideal-org:hover {
+    opacity: 0.8;
+}
+
+.btn-find-ideal-org-text {
+    align-self: center;
+}
+
+.btn-find-ideal-org .btn-arrow-right {
+    max-height: 42px;
+    filter: invert(93%) sepia(44%) saturate(1475%) hue-rotate(323deg) brightness(103%) contrast(92%);
+}
+
+/*ORG DIRECTORY FILTER FEATURE CSS*/
+
+.filter {
+    margin-top: 2%;
+}
+
+.filter-features {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.neighborhood-filter {
+    width: 27%;
+}
+
+select {
+    appearance: none;
+    outline: none;
+    background: url(https://myplacedumarche.com/test/wp-content/themes/placedumarche/media/icons/ic-chevron-down-yellow.svg) 95% / 45px no-repeat #eee;
+    background-color: #011D30;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Open-Sans';
+    padding: 15px 50px 15px 10px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.dropdown-check-list {
+    display: inline-block;
+    background: url(https://myplacedumarche.com/test/wp-content/themes/placedumarche/media/icons/ic-chevron-down-yellow.svg) 95% / 45px no-repeat #eee;
+    background-color: #011D30;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 50px 15px 10px;
+    border-radius: 5px;
+}
+
+
+.dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    max-width: 276.85px;
+    width: 100%;
+    background-color: #011D30;
+    border-radius: 5px;
+}
+
+.dropdown-check-list ul.items li {
+  list-style: none;
+}
+
+.reset-filter, .apply-filter {
+    display:inline-block;
+    color:#444;
+    border:1px solid #CCC;
+    background:#DDD;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    vertical-align:middle;
+    max-width: 100px;
+    padding: 5px;
+    text-align: center;
+    font-size: inherit;
+    border-radius: 3px;
+}
+
+.reset-filter:hover, .apply-filter:hover {
+    opacity: 0.8;
+}
+
+.reset-filter:active, .apply-filter:active {
+    color:red;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+
+.filter-btns {
+    display: flex;
+    margin-top: 1%;
+    gap: 1%;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 975px) {
+    
+    .filter-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .neighborhood-filter {
+        width: 46%;
+    }
+    
+    select {
+        margin-bottom: 1%;
+    }
+    
+    .dropdown-check-list {
+        width: 46%;
+        margin-bottom: 1%;
+    }
+    
+    .dropdown-check-list .anchor {
+        width: 80%;
+    }
+
+    .dropdown-check-list ul.items {
+        max-width: 296.85px;
+    }
+}
+
+
+/*END OF ORG DIRECTORY FILTER FEATURE CSS*/
+
+
+@media screen and (max-width: 1000px) {
+    
+    .page-title {
+        margin-top: 7%;
+    }
+    
+    .icon-location {
+        width: 39px;
+    }
+    
+    .map {
+        margin-top: 4%;
+    }
+    
+    .org-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        column-gap: 4%;
+         /*row gap is defined by the margin-bottom value of .org-container*/
+    }
+    
+    .org-container {
+        margin-bottom: 9%;
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+      
+    .page-title > h1 {
+        width: 55%;
+    }
+    
+    .btn-readmore {
+        width: 66%;
+    }
+    
+    .btn-find-ideal-org {
+        width: 63%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+}
+
+/********* END OF ORG DIRECTORY CSS: *********/
+
+
+/********* ORG SINGLE PAGE CSS: *********/
+
+.single-org {
+    margin-top: 5%;
+}
+
+.single-org .org-title {
+    margin-bottom: 3%;
+}
+
+.single-org-row {
+    display: flex;
+}
+
+.single-org-logo {
+    align-self: center;
+    padding-left: 2%;
+}
+
+.single-org-content {
+    flex-shrink: 15;
+    padding-left: 5%;
+    color: #3A6480;
+    font-family: 'Open-Sans';
+    font-weight: 600;
+}
+
+.single-org-categories {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    font-weight: 600;
+}
+
+.org-category-title {
+    text-align: center;
+    background-color: #CCCCCC;
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+.org-target-list, .org-service-list, .org-contact-list {
+    list-style-type: none;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 6%;
+    padding-top: 3%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.single-org-target {
+    width: 24%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
+    text-align: center;
+}
+
+.single-org-service {
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.single-org-contact {
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
+    text-align: center;
+}
+
+.org-service-list {
+    column-count: 2;
+}
+
+.list-element {
+    padding-bottom: 1%;
+    color: #3A6480;
+    font-weight: 600;
+}
+
+.single-org .map {
+    width: 100%;
+}
+
+.single-org-map-contact .map .acf-map {
+    height: 350px;
+}
+
+.single-org-map-contact {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+.single-role-org .org-category-title {
+    background: none;
+    text-align: start;
+}
+
+.org-roles-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.single-role-org {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.btn-volunteer {
+    margin-top: 1%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    background-color: #011D30;
+    margin-left: auto;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.btn-volunteer:hover {
+    opacity: 0.8;
+}
+
+.single-btn-redirect {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.btn-org-directory, .btn-ideal-org {
+    background-color: #011D30;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    width: 24%;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+@media screen and (max-width: 950px) {
+    
+    .single-org-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .single-org-service {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+    .single-org-row {
+        flex-direction: column;
+    }
+    
+    .single-org-target {
+        width: 30%;
+    }
+    
+    .single-org-service {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+    
+    .single-role-org {
+        margin-bottom: 9%;
+    }
+    
+    .org-roles-list {
+        display: block;
+        column-count: 2;
+        padding-left: 6%;
+    }
+    
+    .list-element {
+        padding-bottom: 5%;
+    }
+    
+    .btn-volunteer {
+        width: 27%;
+    }
+    
+    .single-btn-redirect {
+        margin-bottom: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-org-directory, .btn-ideal-org {
+        width: 60%;
+    }
+    
+    .btn-org-directory {
+        margin-bottom: 4%;
+    }
+}
+
+/********* END OF ORG SINGLE PAGE CSS: *********/
+
